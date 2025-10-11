@@ -23,9 +23,9 @@
             quick-tap-ms = <200>;
         };
 
-        shifthr: shifthr {
+        holdtap: holdtap {
             compatible = "zmk,behavior-hold-tap";
-            label = "SHIFTHR";
+            label = "HOLDTAP";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -106,10 +106,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q              &kp W             &kp E                    &kp R                  &kp T                   &kp Y                 &kp U              &kp I             &kp O                &kp P                    &none
-&none  &weak LEFT_META A  &weak LEFT_ALT R  &shifthr LEFT_CONTROL S  &shifthr LEFT_SHIFT T  &shifthr RIGHT_ALT G    &shifthr RIGHT_ALT H  &shifthr RSHIFT J  &shifthr RCTRL K  &shifthr LEFT_ALT L  &shifthr RIGHT_GUI SEMI  &none
-&none  &kp Z              &kp X             &kp C                    &kp V                  &kp B                   &kp N                 &kp M              &kp COMMA         &kp DOT              &kp FSLH                 &none
-                                            &lt 1 ESCAPE             &lt 2 SPACE            &lt 3 TAB               &lt 4 RET             &lt 5 BACKSPACE    &lt 6 DELETE
+&none  &kp Q                 &kp W                &kp E                    &kp R                  &kp T                   &kp Y                 &kp U              &kp I             &kp O                &kp P                    &none
+&none  &holdtap LEFT_META A  &holdtap LEFT_ALT R  &holdtap LEFT_CONTROL S  &holdtap LEFT_SHIFT T  &holdtap RIGHT_ALT G    &holdtap RIGHT_ALT H  &holdtap RSHIFT J  &holdtap RCTRL K  &holdtap LEFT_ALT L  &holdtap RIGHT_GUI SEMI  &none
+&none  &kp Z                 &kp X                &kp C                    &kp V                  &kp B                   &kp N                 &kp M              &kp COMMA         &kp DOT              &kp FSLH                 &none
+                                                  &lt 1 ESCAPE             &lt 2 SPACE            &lt 3 TAB               &lt 4 RET             &lt 5 BACKSPACE    &lt 6 DELETE
             >;
 
             label = "home";
@@ -126,10 +126,10 @@
 
         WM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &holdtap LG(NUMBER_1) LS(LG(NUMBER_1))  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans                                  &trans
             >;
         };
 
@@ -154,7 +154,7 @@
             bindings = <
 &none  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &none
 &none  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &none
-&none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &shifthr PERIOD NUMBER_3  &kp BACKSLASH  &none
+&none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &holdtap PERIOD NUMBER_3  &kp BACKSLASH  &none
                                                 &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
             >;
 

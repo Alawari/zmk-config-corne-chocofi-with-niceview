@@ -6,7 +6,9 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -129,53 +131,45 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &holdtap LG(NUMBER_1) LS(LG(NUMBER_1))  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans                                  &trans
+                        &trans  &trans  &trans    &none   &none                                   &none
             >;
         };
 
         nav {
             bindings = <
-&trans  &kp F1            &kp F2           &kp F3        &kp F4             &email             &kp LS(K_PREVIOUS)  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp LS(K_NEXT)  &kp K_PLAY_PAUSE  &trans
-&trans  &hm LEFT_META F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &hm LC(V) LC(C)    &kp LEFT_ARROW      &kp DOWN           &kp UP_ARROW     &kp RIGHT       &none             &trans
-&trans  &kp F9            &kp F10          &kp F11       &kp F12            &kp PSCRN          &kp LA(H)           &kp LA(TAB)        &none            &kp LA(L)       &none             &trans
-                                           &bt BT_CLR    &bt BT_NXT         &trans             &trans              &trans             &trans
+&trans  &none          &kp F7           &kp F8        &kp F9             &kp F12                   &kp LS(HOME)    &kp PAGE_DOWN  &kp PAGE_UP   &kp LS(END)  &none  &trans
+&trans  &kp LEFT_META  &hm LEFT_ALT F4  &hm LCTRL F5  &hm LEFT_SHIFT F6  &holdtap RMETA LC(F11)    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none  &trans
+&trans  &none          &kp F1           &kp F2        &kp F3             &kp F10                   &none           &none          &none         &none        &none  &trans
+                                        &none         &none              &trans                    &kp ENTER       &kp BACKSPACE  &kp DELETE
             >;
 
             label = "nav";
         };
 
-        num {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
+        NUM {
             bindings = <
-&none  &kp EXCL            &kp AT               &kp LEFT_BRACE              &kp RIGHT_BRACE                   &kp PIPE     &kp PLUS   &kp NUMBER_7  &kp N8        &kp N9                    &kp ASTERISK   &none
-&none  &hm LEFT_META HASH  &hm LEFT_ALT DOLLAR  &hm LCTRL LEFT_PARENTHESIS  &hm LEFT_SHIFT RIGHT_PARENTHESIS  &kp GRAVE    &kp MINUS  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6              &kp COLON      &none
-&none  &kp PERCENT         &kp CARET            &kp LEFT_BRACKET            &kp RIGHT_BRACKET                 &kp TILDE    &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &holdtap PERIOD NUMBER_3  &kp BACKSLASH  &none
-                                                &none                       &kp LC(BACKSPACE)                 &kp DEL      &kp RET    &kp SPACE     &kp N0
+&trans  &kp LS(PIPE)  &kp N7  &kp N8   &kp N9  &kp LS(PRCNT)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE     &kp N4  &kp N5   &kp N6  &kp LS(GRAVE)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none         &kp N1  &kp N2   &kp N3  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+                              &kp DOT  &kp N0  &kp COMMA        &trans  &trans  &trans
             >;
-
-            label = "num";
         };
 
         SYM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &kp CARET     &kp LS(STAR)   &kp MINUS      &kp LS(PLUS)   &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SQT       &kp LS(POUND)  &kp LS(EXCL)   &kp LS(QMARK)  &kp DOUBLE_QUOTES    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(AMPS)  &kp LS(DLLR)   &kp LS(UNDER)  &kp BSLH       &kp LS(AT)           &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LS(LBRC)   &kp LS(LPAR)   &kp LBKT             &trans  &trans  &trans
             >;
         };
 
         MEDIA {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans             &trans        &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &trans        &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &ext_power EP_TOG  &kp K_PREV    &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp K_NEXT    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &out OUT_TOG       &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &trans        &trans  &trans  &trans  &trans  &trans  &trans
+                                         &kp K_STOP            &kp K_PLAY_PAUSE      &kp K_MUTE    &trans  &trans  &trans
             >;
         };
     };

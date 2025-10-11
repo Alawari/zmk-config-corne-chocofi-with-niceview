@@ -109,7 +109,7 @@
 
             bindings = <
 &none  &kp Q                 &kp W                &kp E                    &kp R                  &kp T                   &kp Y                 &kp U              &kp I             &kp O                &kp P                    &none
-&none  &holdtap LEFT_META A  &holdtap LEFT_ALT R  &holdtap LEFT_CONTROL S  &holdtap LEFT_SHIFT T  &holdtap RIGHT_ALT G    &holdtap RIGHT_ALT H  &holdtap RSHIFT J  &holdtap RCTRL K  &holdtap LEFT_ALT L  &holdtap RIGHT_GUI SEMI  &none
+&none  &holdtap LEFT_META A  &holdtap LEFT_ALT S  &holdtap LEFT_CONTROL D  &holdtap LEFT_SHIFT F  &holdtap RIGHT_ALT G    &holdtap RIGHT_ALT H  &holdtap RSHIFT J  &holdtap RCTRL K  &holdtap LEFT_ALT L  &holdtap RIGHT_GUI SEMI  &none
 &none  &kp Z                 &kp X                &kp C                    &kp V                  &kp B                   &kp N                 &kp M              &kp COMMA         &kp DOT              &kp FSLH                 &none
                                                   &lt 1 ESCAPE             &lt 2 SPACE            &lt 3 TAB               &lt 4 RET             &lt 5 BACKSPACE    &lt 6 DELETE
             >;
@@ -117,7 +117,7 @@
             label = "home";
         };
 
-        MOUSE {
+        mouse {
             bindings = <
 &trans  &trans    &trans    &trans     &trans          &trans    &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LEFT_SHIFT  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans  &trans
@@ -128,10 +128,10 @@
 
         WM {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &holdtap LG(NUMBER_1) LS(LG(NUMBER_1))  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &none   &none                                   &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                      &holdtap LA(N7) LS(LA(N7))              &holdtap LA(N8) LS(LA(N8))              &holdtap LA(N9) LS(LA(N9))              &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                      &holdtap LA(NUMBER_4) LS(LA(NUMBER_4))  &holdtap LA(N5) LS(LA(N5))              &holdtap LA(NUMBER_6) LA(LS(NUMBER_6))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                      &holdtap LA(NUMBER_1) LS(LA(NUMBER_1))  &holdtap LA(NUMBER_2) LS(LA(NUMBER_2))  &holdtap LA(NUMBER_3) LS(LA(NUMBER_3))  &trans  &trans
+                        &trans  &trans  &trans    &holdtap LA(F1) LS(LA(F1))  &holdtap LA(N0) LS(LA(N0))              &holdtap LA(F2) LS(LA(F2))
             >;
         };
 
@@ -157,10 +157,10 @@
 
         SYM {
             bindings = <
-&trans  &kp CARET     &kp LS(STAR)   &kp MINUS      &kp LS(PLUS)   &kp EQUAL            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp SQT       &kp LS(POUND)  &kp LS(EXCL)   &kp LS(QMARK)  &kp DOUBLE_QUOTES    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(AMPS)  &kp LS(DLLR)   &kp LS(UNDER)  &kp BSLH       &kp LS(AT)           &trans  &trans  &trans  &trans  &trans  &trans
-                                     &kp LS(LBRC)   &kp LS(LPAR)   &kp LBKT             &trans  &trans  &trans
+&trans  &kp CARET     &kp LS(STAR)   &kp MINUS      &kp LS(PLUS)   &kp EQUAL     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp SQT       &kp LS(POUND)  &kp LS(EXCL)   &kp LS(QMARK)  &kp DQT       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(AMPS)  &kp LS(DLLR)   &kp LS(UNDER)  &kp BSLH       &kp LS(AT)    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LS(LBRC)   &kp LS(LPAR)   &kp LBKT      &trans  &trans  &trans
             >;
         };
 

@@ -129,7 +129,7 @@
         WM {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                      &holdtap LA(N7) LS(LA(N7))              &holdtap LA(N8) LS(LA(N8))              &holdtap LA(N9) LS(LA(N9))              &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans                      &holdtap LA(NUMBER_4) LS(LA(NUMBER_4))  &holdtap LA(N5) LS(LA(N5))              &holdtap LA(NUMBER_6) LA(LS(NUMBER_6))  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans                      &holdtap LA(NUMBER_4) LS(LA(NUMBER_4))  &holdtap LA(N5) LS(LA(N5))              &holdtap LA(NUMBER_6) LS(LA(NUMBER_6))  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans                      &holdtap LA(NUMBER_1) LS(LA(NUMBER_1))  &holdtap LA(NUMBER_2) LS(LA(NUMBER_2))  &holdtap LA(NUMBER_3) LS(LA(NUMBER_3))  &trans  &trans
                         &trans  &trans  &trans    &holdtap LA(F1) LS(LA(F1))  &holdtap LA(N0) LS(LA(N0))              &holdtap LA(F2) LS(LA(F2))
             >;

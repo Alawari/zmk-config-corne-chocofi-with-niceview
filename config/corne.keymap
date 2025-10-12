@@ -121,6 +121,13 @@
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
             label = "DOUBLEQUOTE_SP";
         };
+
+        care_sp: care_sp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp SPACE>;
+            label = "CARE_SP";
+        };
     };
 
     keymap {
@@ -183,7 +190,7 @@
 
         SYM {
             bindings = <
-&trans  &kp CARET     &kp LS(STAR)   &kp MINUS                            &kp LS(PLUS)                                     &kp EQUAL                              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &care_sp      &kp LS(STAR)   &kp MINUS                            &kp LS(PLUS)                                     &kp EQUAL                              &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &quote_sp     &kp LS(POUND)  &kp LS(EXCL)                         &kp LS(QMARK)                                    &doublequote_sp                        &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LS(AMPS)  &kp LS(DLLR)   &kp LS(UNDER)                        &kp BSLH                                         &kp LS(AT)                             &trans  &trans  &trans  &trans  &trans  &trans
                                      &holdtap LS(RIGHT_BRACE) LEFT_BRACE  &holdtap LS(RIGHT_PARENTHESIS) LEFT_PARENTHESIS  &holdtap RIGHT_BRACKET LEFT_BRACKET    &trans  &trans  &trans

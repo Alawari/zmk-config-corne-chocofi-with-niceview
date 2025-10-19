@@ -134,6 +134,7 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE &kp SPACE>;
             label = "GRAVE_SP";
+            wait-ms = <0>;
         };
 
         tilde_sp: tilde_sp {
@@ -141,6 +142,7 @@
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp SPACE>;
             label = "TILDE_SP";
+            wait-ms = <0>;
         };
 
         quote_sp: quote_sp {
@@ -148,6 +150,7 @@
             #binding-cells = <0>;
             bindings = <&kp SINGLE_QUOTE &kp SPACE>;
             label = "QUOTE_SP";
+            wait-ms = <0>;
         };
 
         doublequote_sp: doublequote_sp {
@@ -155,6 +158,7 @@
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
             label = "DOUBLEQUOTE_SP";
+            wait-ms = <0>;
         };
 
         care_sp: care_sp {
@@ -162,6 +166,7 @@
             #binding-cells = <0>;
             bindings = <&kp CARET &kp SPACE>;
             label = "CARE_SP";
+            wait-ms = <0>;
         };
     };
 

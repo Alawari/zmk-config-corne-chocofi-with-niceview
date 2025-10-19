@@ -64,24 +64,59 @@
     combos {
         compatible = "zmk,combos";
 
-        escape {
-            bindings = <&kp ESCAPE>;
-            key-positions = <16 19>;
-        };
-
-        under {
-            bindings = <&kp UNDER>;
-            key-positions = <28 31>;
-        };
-
-        dash {
-            bindings = <&kp MINUS>;
-            key-positions = <4 7>;
+        terminal {
+            bindings = <&kp LA(A)>;
+            key-positions = <19 16>;
         };
 
         capsword {
             bindings = <&caps_word>;
-            key-positions = <13 22>;
+            key-positions = <5 6>;
+        };
+
+        parent_right {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <19 20>;
+        };
+
+        parent_left {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <15 16>;
+        };
+
+        bracket_left {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <3 4>;
+        };
+
+        bracket_right {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <7 8>;
+        };
+
+        brace_left {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <27 28>;
+        };
+
+        brace_right {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <31 32>;
+        };
+
+        browser {
+            bindings = <&kp LA(Z)>;
+            key-positions = <17 18>;
+        };
+
+        filebrowser {
+            bindings = <&kp LA(D)>;
+            key-positions = <15 20>;
+        };
+
+        vim {
+            bindings = <&kp LA(V)>;
+            key-positions = <14 21>;
         };
     };
 

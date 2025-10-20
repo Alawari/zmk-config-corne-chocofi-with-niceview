@@ -210,9 +210,9 @@
 
         nav {
             bindings = <
-&trans  &none          &kp F7           &kp F8        &kp F9             &kp F12                   &kp LS(HOME)    &kp PAGE_DOWN  &kp PAGE_UP   &kp LS(END)    &none  &trans
-&trans  &kp LEFT_META  &hm LEFT_ALT F4  &hm LCTRL F5  &hm LEFT_SHIFT F6  &holdtap RMETA LC(F11)    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT      &none  &trans
-&trans  &none          &kp F1           &kp F2        &kp F3             &kp F10                   &kp K_BACK      &kp F5         &kp F6        &kp K_FORWARD  &none  &trans
+&trans  &none          &kp F7           &kp F8        &kp F9             &kp F12                   &kp LS(HOME)    &kp PAGE_DOWN  &kp PAGE_UP   &kp LS(END)  &none  &trans
+&trans  &kp LEFT_META  &hm LEFT_ALT F4  &hm LCTRL F5  &hm LEFT_SHIFT F6  &holdtap RMETA LC(F11)    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT    &none  &trans
+&trans  &none          &kp F1           &kp F2        &kp F3             &kp F10                   &mkp MB4        &kp F5         &kp F6        &mkp MB5     &none  &trans
                                         &none         &none              &trans                    &kp ENTER       &kp BACKSPACE  &kp DELETE
             >;
 

@@ -118,6 +118,16 @@
             bindings = <&kp LA(V)>;
             key-positions = <14 21>;
         };
+
+        kill {
+            bindings = <&kp LA(LS(Q))>;
+            key-positions = <0 11>;
+        };
+
+        lockscreen {
+            bindings = <&kp LA(LS(T))>;
+            key-positions = <1 10>;
+        };
     };
 
     macros {

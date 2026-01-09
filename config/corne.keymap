@@ -77,31 +77,43 @@
         parent_right {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <20 21>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         parent_left {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <14 15>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         bracket_left {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <27 26>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         bracket_right {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <32 33>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         brace_left {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <3 2>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         brace_right {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <8 9>;
+            timeout-ms = <25>;
+            require-prior-idle-ms = <25>;
         };
 
         browser {

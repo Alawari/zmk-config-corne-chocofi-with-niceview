@@ -148,7 +148,7 @@
         };
 
         goto_games {
-            bindings = <&sl 0>;
+            bindings = <&sl 7>;
             key-positions = <6 7 8 9>;
             layers = <0>;
         };

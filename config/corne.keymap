@@ -140,6 +140,18 @@
             bindings = <&kp LA(LS(T))>;
             key-positions = <2 9>;
         };
+
+        goto_default {
+            bindings = <&sl 0>;
+            key-positions = <6 7 8 9>;
+            layers = <7>;
+        };
+
+        goto_games {
+            bindings = <&sl 0>;
+            key-positions = <6 7 8 9>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -265,6 +277,15 @@
 &trans  &ext_power EP_TOG  &kp K_PREV    &kp C_VOLUME_UP       &kp C_VOLUME_DOWN     &kp K_NEXT    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &out OUT_TOG       &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2          &trans        &trans  &trans  &trans  &trans  &trans  &trans
                                          &kp K_STOP            &kp K_PLAY_PAUSE      &kp K_MUTE    &trans  &trans  &trans
+            >;
+        };
+
+        games {
+            bindings = <
+&trans  &kp TAB    &kp Q  &kp W    &kp E      &kp R      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp A  &kp S    &kp D      &kp F      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp Z  &kp X    &kp C      &kp V      &trans  &trans  &trans  &trans  &trans  &trans
+                          &kp ESC  &kp SPACE  &kp RET    &trans  &trans  &trans
             >;
         };
     };

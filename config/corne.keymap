@@ -141,16 +141,10 @@
             key-positions = <2 9>;
         };
 
-        goto_default {
-            bindings = <&tog 0>;
-            key-positions = <6 7 8 9>;
-            layers = <7>;
-        };
-
-        goto_games {
+        toggle_games {
             bindings = <&tog 7>;
             key-positions = <6 7 8 9>;
-            layers = <0>;
+            layers = <0 7>;
         };
     };
 

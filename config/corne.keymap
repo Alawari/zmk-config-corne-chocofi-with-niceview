@@ -142,13 +142,13 @@
         };
 
         goto_default {
-            bindings = <&sl 0>;
+            bindings = <&tog 0>;
             key-positions = <6 7 8 9>;
             layers = <7>;
         };
 
         goto_games {
-            bindings = <&sl 7>;
+            bindings = <&tog 7>;
             key-positions = <6 7 8 9>;
             layers = <0>;
         };
